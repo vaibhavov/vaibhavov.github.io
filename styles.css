@@ -430,6 +430,7 @@ footer {
 
 /* Back to Top Button */
 .back-to-top {
+    display: none;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -505,4 +506,49 @@ footer {
     section {
         padding: 60px 0;
     }
+}
+
+.interests {
+    background-color: #fff;
+}
+
+.interests h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.interests h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #3498db;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.interests-item {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.interests-item:hover {
+    transform: translateY(-5px);
+}
+
+.interests-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2c3e50;
 }
