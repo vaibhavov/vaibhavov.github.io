@@ -1,196 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaibhav Sonkar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
 </head>
-    
 <body id="top">
-    <header>
-        <div class="header-content">
-            <div class="name-section">
-                <h1>Vaibhav Sonkar</h1>
-                <p class="title">A Geospatial Enthusiast</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#writeups">Write-Ups</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#workExp">Work Experience</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <div class="profile-image">
-                <img src="profile.jpg" alt="Vaibhav">
-            </div>
-            <div class="quote">
-                <blockquote>
-                    "What you seek is seeking you."
-                </blockquote>
-                <p class="quote-author">— Rumi</p>
-            </div>
-        </div>
-    </section>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-logo">VS</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#writeups">Writing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span>
+    </button>
+  </nav>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>Hola! I'm <strong>Vaibhav Sonkar</strong>, a Master's student at <strong>IIT Bombay</strong>, specializing in <em>Geoinformatics and Natural Resources Engineering</em>. My academic journey bridges civil engineering foundations with cutting-edge research in geospatial technologies, deep learning, and AI.</p>
-                <p>Currently, I'm working on <strong>"High-Performance Onboard Data Processing"</strong> at the Centre of Studies in Resources Engineering (CSRE), IIT Bombay, under the guidance of <strong>Prof. Surya S. Durbha</strong>. This project aligns with my broader interest in building scalable, real-time AI models for satellite-based disaster mapping and Earth observation.</p>
-                <p>My technical expertise spans <strong>data structures and algorithms, deep learning, machine learning, GIS, and remote sensing</strong>. I thrive at the intersection of domain science and intelligent systems, particularly in transforming raw spatial data into actionable insights.</p>
-                <p>Academically, I’ve been fortunate to achieve <strong>All India Rank 1 in GATE Geomatics Engineering, 2024</strong>. I hold a Bachelor’s degree in Civil Engineering from <strong>IIT Roorkee</strong>, where I built a solid foundation in transportation systems, surveying, and hydrological modeling.</p>
-                <p>Beyond academics, I enjoy exploring culinary arts, singing, and crafting things hands-on, be it DIY projects.</p>
-            </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-kicker animate" style="--d:0.1s">M.Tech · IIT Bombay · CSRE</p>
+      <h1 class="hero-headline animate" style="--d:0.25s">
+        I teach<br>
+        machines<br>
+        to read<br>
+        the <em>Earth.</em>
+      </h1>
+      <p class="hero-body animate" style="--d:0.45s">
+        I'm Vaibhav — a geospatial AI researcher building systems that turn satellite signals into meaning. From crop fields in Latur to onboard processors in orbit, I work where maps meet models.
+      </p>
+      <div class="hero-actions animate" style="--d:0.6s">
+        <a href="#projects" class="btn-primary">See my work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-right animate" style="--d:0.3s">
+      <div class="photo-frame">
+        <img src="profile.jpg" alt="Vaibhav Sonkar" class="hero-photo">
+        <div class="photo-badge">
+          <span class="badge-num">#1</span>
+          <span class="badge-label">GATE GE 2024</span>
         </div>
-    </section>
+      </div>
+      <div class="hero-quote">
+        <blockquote>"What you seek<br>is seeking you."</blockquote>
+        <cite>— Rumi</cite>
+      </div>
+    </div>
+  </section>
 
-    <section id="writeups" class="writeups">
-        <div class="container">
-            <h2>Write-Ups</h2>
-            <div class="writeups-grid">
-                <div class="writeups">
-                    <h3>writeups 1</h3>
-                    <p>Description of Project 1. What it does, technologies used, your role, etc.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                
-                <div class="writeups">
-                    <h3>writeups 2</h3>
-                    <p>Description of writeups 2. What it does, technologies used, your role, etc.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                
-                <div class="writeups">
-                    <h3>writeups 3</h3>
-                    <p>Description of writeups 3. What it does, technologies used, your role, etc.</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            
-            <div class="project">
-                <h3>Projecs Title 1</h3>
-                <p class="objective">Objective: Your Name, Co-author 1, Co-author 2</p>
-                <p class="keywords">Keywords: Journal Name, Year</p>
-                <div class="project-links">
-                    <a href="#" class="btn">PDF</a>
-                    <a href="#" class="btn">Code</a>
-                </div>
-            </div>
-            
-            <div class="project">
-                <h3>projects Title 2</h3>
-                <p class="objective">objective: Your Name, Co-author 1, Co-author 2</p>
-                <p class="keywords">keywordse: Conference Name, Year</p>
-                <div class="project-links">
-                    <a href="#" class="btn">PDF</a>
-                    <a href="#" class="btn">Code</a>
-                </div>
-            </div>
-            
-            <div class="project">
-                <h3>projects Title 3</h3>
-                <p class="objective">objective: Your Name, Co-author 1, Co-author 2</p>
-                <p class="keywords">keywords: Journal Name, Year</p>
-                <div class="project-links">
-                    <a href="#" class="btn">PDF</a>
-                    <a href="#" class="btn">Code</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Sentinel-1 SAR</span><span class="dot">·</span>
+      <span>Google Earth Engine</span><span class="dot">·</span>
+      <span>LangGraph Agents</span><span class="dot">·</span>
+      <span>Crop Yield Estimation</span><span class="dot">·</span>
+      <span>3D-CNN</span><span class="dot">·</span>
+      <span>Self-Supervised Learning</span><span class="dot">·</span>
+      <span>RAG Pipelines</span><span class="dot">·</span>
+      <span>PyTorch</span><span class="dot">·</span>
+      <span>Remote Sensing</span><span class="dot">·</span>
+      <span>Sentinel-1 SAR</span><span class="dot">·</span>
+      <span>Google Earth Engine</span><span class="dot">·</span>
+      <span>LangGraph Agents</span><span class="dot">·</span>
+      <span>Crop Yield Estimation</span><span class="dot">·</span>
+      <span>3D-CNN</span><span class="dot">·</span>
+      <span>Self-Supervised Learning</span><span class="dot">·</span>
+      <span>RAG Pipelines</span><span class="dot">·</span>
+      <span>PyTorch</span><span class="dot">·</span>
+      <span>Remote Sensing</span><span class="dot">·</span>
+    </div>
+  </div>
 
-    <section id="workExp" class="workExp">
-        <div class="container">
-            <h2>Work Experience</h2>
-            
-            <div class="workExp">
-                <h3>Intern Role1</h3>
-                <p class="authors">Authors: Your Name, Co-author 1, Co-author 2</p>
-                <p class="venue">Journal/Conference: Journal Name, Year</p>
-                <div class="publication-links">
-                    <!--<a href="#" class="btn">PDF</a>-->
-                </div>
-            </div>
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-inner">
+      <div class="about-label-col">
+        <span class="section-label">About</span>
+      </div>
+      <div class="about-content">
+        <p class="about-lead">
+          I grew up fascinated by maps — the way they collapse the world into something you can hold and reason about.
+        </p>
+        <div class="about-body">
+          <p>That fascination grew into a career at the edge of geospatial science and AI. My undergrad in Civil Engineering at IIT Roorkee gave me physical intuition; my master's at IIT Bombay gave me the tools to push further — under Prof. Surya S. Durbha at CSRE, one of India's leading remote sensing labs.</p>
+          <p>I like working on problems where the data is messy and the stakes are real. Like estimating crop yield from radar backscatter in a district where farmers make decisions on gut feel. If I can replace some of that uncertainty with signal, that's worth building for.</p>
+          <p>Outside research: I cook with the same experimental energy I bring to model architectures. I sing. I build things with my hands. And I compete in programming contests when I need a reminder that elegance matters.</p>
         </div>
-    </section>
-     
-    <section id="interests" class="interests">
-        <div class="container">
-            <h2>Interests</h2>
-            <div class="interests-grid">
-                <div class="interests-item">
-                    <h3>Software Development</h3>
-                    <p>I’m passionate about software development and enjoy building scalable, real-world solutions. My strong foundation in Data Structures and Algorithms helps me write optimized and efficient code, and I constantly explore new tools and frameworks to enhance my development skills.</p>
-                </div>
-                <div class="interests-item">
-                    <h3>Deep Learning</h3>
-                    <p>I’m deeply interested in deep learning and its ability to solve complex real-world problems. I enjoy building models for tasks like image recognition, classification, segmentation, and anomaly detection. I constantly explore new architectures and research to stay updated in the field.</p>
-                </div>
-                <div class="interests-item">
-                    <h3>Geospatial Applications</h3>
-                    <p>I am always astonished by the diverse applications of geospatial technologies and their role in solving environmental and societal challenges. I enjoy working with remote sensing data, GIS tools, and spatial analytics to develop insightful, location-based solutions for real-world applications like precision agriculture, climate change, urban planning, and disaster management.</p>
-                </div>
-            </div>
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-val">AIR 1</span>
+            <span class="fact-key">GATE Geomatics Engineering 2024</span>
+          </div>
+          <div class="fact">
+            <span class="fact-val">Rank #2</span>
+            <span class="fact-key">M.Tech program, CSRE IIT Bombay</span>
+          </div>
+          <div class="fact">
+            <span class="fact-val">IIT Roorkee</span>
+            <span class="fact-key">B.Tech Civil Engineering</span>
+          </div>
         </div>
-    </section>
-    
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p><a href="mailto:vsonkar@ce.iitr.ac.in">vsonkar@ce.iitr.ac.in</a></p>
-                    <p><a href="mailto:24m0301@iitb.ac.in">24m0301@iitb.ac.in</a></p>
-                </div>
-                <div class="contact-item">
-                    <h3>Location</h3>
-                    <p>IIT Bombay, Mumbai, India, 400076</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Connect</h3>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/vaibhav-sonkar-307419160/" class="social-link">LinkedIn</a>
-                        <a href="https://github.com/vaibhavov" class="social-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-        <p>&copy; 2025 Vaibhav Sonkar. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <a href="#top" class="back-to-top" title="Back to Top">&#8679;</a>
-    
-    <script>
-        const backToTop = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', () => {
-            backToTop.style.display = window.scrollY > 300 ? 'block': 'none';
-        });
-    </script>
+      </div>
+    </div>
+  </section>
 
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-header">
+      <span class="section-label">Projects</span>
+      <h2 class="section-title">Things I've built</h2>
+    </div>
+
+    <div class="projects-list">
+
+      <article class="project-row">
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <div class="project-tags">
+            <span class="tag">LangGraph</span>
+            <span class="tag">GEE</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Ollama</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">GeoEye — an AI that thinks like an agronomist</h3>
+          <p class="project-desc">A multi-agent framework that pulls live Sentinel satellite data, runs it through a crop-science RAG pipeline built on ChromaDB and Qwen3 embeddings, and hands farmers decision-ready intelligence. The whole thing runs locally on an RTX A5000 — no cloud dependency. Built on LangGraph with a shared AgentState schema across Master, Data, Monitoring, Yield, and Decision sub-agents.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">View project <span>→</span></a>
+            <a href="#" class="link-arrow">Code <span>→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <div class="project-tags">
+            <span class="tag">Sentinel-1</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">SSL</span>
+            <span class="tag">3D-CNN</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Soybean yield from radar shadows</h3>
+          <p class="project-desc">SAR backscatter doesn't look like anything to a human eye — but a 3D-CNN trained on fortnightly Sentinel-1 composites over Latur district can predict field-level yield. The hard part: only 568 labeled fields. The solution: a self-supervised pretraining stage using masked temporal autoencoding, giving the model structure before it ever sees a yield label.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">View project <span>→</span></a>
+            <a href="#" class="link-arrow">Code <span>→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <div class="project-tags">
+            <span class="tag">YOLOv8</span>
+            <span class="tag">Kalman Filter</span>
+            <span class="tag">SAHI</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Tracking a cricket ball at 140 km/h</h3>
+          <p class="project-desc">A physics-aware Kalman tracker built on YOLOv8x + SAHI detection. The interesting problem wasn't detection — it was false-positive suppression. A ball in flight looks a lot like a bird, a shadow, a player's arm. The solution was a state machine (IDLE / TRACKING / LOST) that gates detections through Euclidean physics constraints before committing to a track.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">View project <span>→</span></a>
+            <a href="#" class="link-arrow">Code <span>→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-meta">
+          <span class="project-num">04</span>
+          <div class="project-tags">
+            <span class="tag">Prithvi 300M</span>
+            <span class="tag">Fine-tuning</span>
+            <span class="tag">TCS Research</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Mowing detection from orbit — TCS Research internship</h3>
+          <p class="project-desc">Fine-tuned the Prithvi 300M foundation model on German grassland satellite data to detect mowing events from spectral time series. Reached 87% accuracy on the held-out test set. This project got me thinking seriously about what domain-specific pretraining actually buys you.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">View project <span>→</span></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="experience">
+    <div class="section-header">
+      <span class="section-label">Experience</span>
+      <h2 class="section-title">Where I've been</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-date">2024 – present</div>
+        <div class="tl-connector"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <h3 class="tl-org">IIT Bombay — CSRE</h3>
+          <p class="tl-role">M.Tech Research Scholar</p>
+          <p class="tl-desc">Working on high-performance onboard data processing for Earth observation under Prof. Surya S. Durbha. Building GeoEye — an agentic AI framework for autonomous agricultural intelligence — as my thesis project.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2024</div>
+        <div class="tl-connector"><div class="tl-dot"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <h3 class="tl-org">TCS Research</h3>
+          <p class="tl-role">Research Intern</p>
+          <p class="tl-desc">Fine-tuned Prithvi 300M foundation model for grassland mowing detection using temporal satellite imagery over German grasslands. Achieved 87% classification accuracy. Also served as Company Coordinator for the IIT Bombay Placement Team.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2020 – 2024</div>
+        <div class="tl-connector"><div class="tl-dot"></div></div>
+        <div class="tl-content">
+          <h3 class="tl-org">IIT Roorkee</h3>
+          <p class="tl-role">B.Tech Civil Engineering</p>
+          <p class="tl-desc">Built foundations in transportation systems, hydrological modelling, and surveying. Explored the computational side through competitive programming and an early interest in spatial data. Left with a conviction that the most interesting problems are at the boundary of physical science and computation.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WRITEUPS -->
+  <section id="writeups" class="writeups">
+    <div class="section-header">
+      <span class="section-label">Writing</span>
+      <h2 class="section-title">Notes & write-ups</h2>
+    </div>
+    <div class="writeups-grid">
+      <article class="writeup-card placeholder-card">
+        <span class="writeup-tag">Coming soon</span>
+        <h3 class="writeup-title">Why SAR is underrated for crop monitoring</h3>
+        <p class="writeup-excerpt">Optical satellites can't see through clouds. Radar can. Here's why the geospatial ML community should care more about backscatter than NDVI.</p>
+      </article>
+      <article class="writeup-card placeholder-card">
+        <span class="writeup-tag">Coming soon</span>
+        <h3 class="writeup-title">Building a multi-agent AI with LangGraph</h3>
+        <p class="writeup-excerpt">A walk through the GeoEye architecture — how the agents communicate, how state is shared, and what I'd do differently.</p>
+      </article>
+      <article class="writeup-card placeholder-card">
+        <span class="writeup-tag">Coming soon</span>
+        <h3 class="writeup-title">Self-supervised learning on tiny labeled datasets</h3>
+        <p class="writeup-excerpt">568 labeled fields is nothing. Here's how masked temporal autoencoding gave the soybean yield model enough structure to generalise.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section class="interests">
+    <div class="interests-inner">
+      <div class="int-text">
+        <span class="section-label">Interests</span>
+        <h2 class="interests-title">What pulls me in</h2>
+        <p>I think about geospatial AI, agentic systems, and the gap between foundation models and real-world Earth observation. But I also think the best researchers stay curious beyond their field.</p>
+      </div>
+      <div class="int-grid">
+        <div class="int-item">
+          <h3>Geospatial AI</h3>
+          <p>Remote sensing data is noisy, incomplete, and full of latent structure. Designing models that respect that structure — rather than flattening it into a feature vector — is where I spend most of my thinking time.</p>
+        </div>
+        <div class="int-item">
+          <h3>Agentic systems</h3>
+          <p>LLMs that can plan, retrieve, and reason over satellite data and domain knowledge are still mostly unsolved. GeoEye is my attempt at bridging that gap in a domain where decisions actually matter.</p>
+        </div>
+        <div class="int-item">
+          <h3>Competitive programming</h3>
+          <p>Contests are an honest mirror. They show you quickly whether your understanding is deep or just fluent. I compete to stay sharp and because there is a certain joy in an elegant proof.</p>
+        </div>
+        <div class="int-item">
+          <h3>Making things</h3>
+          <p>Code, food, music, furniture. The medium changes; the obsession with craft doesn't. Building tangible things keeps research honest — you either made it work or you didn't.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <span class="section-label">Contact</span>
+        <h2 class="contact-title">Let's talk</h2>
+        <p class="contact-body">Whether it's research collaboration, project ideas, or just a good conversation about geospatial AI — I'm always up for it.</p>
+      </div>
+      <div class="contact-right">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:24m0301@iitb.ac.in">24m0301@iitb.ac.in</a>
+          <a href="mailto:vsonkar@ce.iitr.ac.in">vsonkar@ce.iitr.ac.in</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Location</span>
+          <span>IIT Bombay, Mumbai — 400076</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Elsewhere</span>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/vaibhav-sonkar-307419160/" target="_blank" class="social-link">LinkedIn →</a>
+            <a href="https://github.com/vaibhavov" target="_blank" class="social-link">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">VS</span>
+      <p class="footer-copy">© 2025 Vaibhav Sonkar</p>
+      <a href="#top" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.project-row, .tl-item, .writeup-card, .int-item').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
