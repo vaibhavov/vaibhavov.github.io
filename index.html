@@ -13,7 +13,7 @@
 
   <!-- NAV -->
   <nav class="nav" id="nav">
-    <a href="#top" class="nav-logo">Ksiti</a>
+    <a href="#top" class="nav-logo">Kshiti</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -122,9 +122,9 @@
       <span class="section-label">Projects</span>
       <h2 class="section-title">Things I've built</h2>
     </div>
-
+ 
     <div class="projects-list">
-
+ 
       <article class="project-row">
         <div class="project-meta">
           <span class="project-num">01</span>
@@ -133,75 +133,112 @@
             <span class="tag">GEE</span>
             <span class="tag">RAG</span>
             <span class="tag">Ollama</span>
+            <span class="tag tag-context">M.Tech Thesis · IIT Bombay</span>
           </div>
         </div>
         <div class="project-body">
           <h3 class="project-title">GeoEye — an AI that thinks like an agronomist</h3>
-          <p class="project-desc">A multi-agent framework that pulls live Sentinel satellite data, runs it through a crop-science RAG pipeline built on ChromaDB and Qwen3 embeddings, and hands farmers decision-ready intelligence. The whole thing runs locally on an RTX A5000 — no cloud dependency. Built on LangGraph with a shared AgentState schema across Master, Data, Monitoring, Yield, and Decision sub-agents.</p>
+          <p class="project-desc">A multi-agent framework that autonomously executes end-to-end multimodal data pipelines for real-time crop health assessment. Built on LangGraph with a shared AgentState schema across Master, Data, Monitoring, Yield, and Decision sub-agents — all running locally on an RTX A5000 with no cloud dependency. RAG pipeline built on ChromaDB and Qwen3 embeddings. Currently extending toward yield prediction and decision recommendation agents with self-learning capabilities and cross-regional knowledge transfer.</p>
           <div class="project-links">
             <a href="#" class="link-arrow">View project <span>→</span></a>
             <a href="#" class="link-arrow">Code <span>→</span></a>
           </div>
         </div>
       </article>
-
+ 
       <article class="project-row">
         <div class="project-meta">
           <span class="project-num">02</span>
           <div class="project-tags">
-            <span class="tag">Sentinel-1</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">SSL</span>
-            <span class="tag">3D-CNN</span>
+            <span class="tag">Prithvi 300M</span>
+            <span class="tag">Sentinel-2</span>
+            <span class="tag">Fine-tuning</span>
+            <span class="tag tag-context">TCS Research · May–Jul 2025</span>
           </div>
         </div>
         <div class="project-body">
-          <h3 class="project-title">Soybean yield from radar shadows</h3>
-          <p class="project-desc">SAR backscatter doesn't look like anything to a human eye — but a 3D-CNN trained on fortnightly Sentinel-1 composites over Latur district can predict field-level yield. The hard part: only 568 labeled fields. The solution: a self-supervised pretraining stage using masked temporal autoencoding, giving the model structure before it ever sees a yield label.</p>
+          <h3 class="project-title">Mowing detection from orbit</h3>
+          <p class="project-desc">Built a mowing detection pipeline for European grasslands to support sustainable biodiversity management. Fine-tuned the Prithvi 300M geospatial foundation model on Sentinel-2 time series data, reaching 87% accuracy. Built a custom dataset and end-to-end preprocessing framework from scratch, then ran a comparative state-of-the-art analysis to identify where geospatial foundation models still fall short.</p>
           <div class="project-links">
             <a href="#" class="link-arrow">View project <span>→</span></a>
-            <a href="#" class="link-arrow">Code <span>→</span></a>
           </div>
         </div>
       </article>
-
+ 
       <article class="project-row">
         <div class="project-meta">
           <span class="project-num">03</span>
           <div class="project-tags">
-            <span class="tag">YOLOv8</span>
-            <span class="tag">Kalman Filter</span>
-            <span class="tag">SAHI</span>
+            <span class="tag">PointNet++</span>
+            <span class="tag">LiDAR</span>
+            <span class="tag">CUDA</span>
+            <span class="tag tag-context">M.Tech Seminar · IIT Bombay</span>
           </div>
         </div>
         <div class="project-body">
-          <h3 class="project-title">Tracking a cricket ball at 140 km/h</h3>
-          <p class="project-desc">A physics-aware Kalman tracker built on YOLOv8x + SAHI detection. The interesting problem wasn't detection — it was false-positive suppression. A ball in flight looks a lot like a bird, a shadow, a player's arm. The solution was a state machine (IDLE / TRACKING / LOST) that gates detections through Euclidean physics constraints before committing to a track.</p>
+          <h3 class="project-title">High-performance onboard processing for disaster mapping</h3>
+          <p class="project-desc">Designed a PointNet++ architecture for real-time earthquake damage classification from LiDAR point clouds, with CUDA optimisations targeting deployment on Nvidia Jetson Nano. Reconstructed a 3D point cloud dataset from the Kumamoto Earthquake with a novel labelling strategy to support training. The constraint — embedded hardware with tight latency budgets — forced every design decision to be justified.</p>
           <div class="project-links">
             <a href="#" class="link-arrow">View project <span>→</span></a>
-            <a href="#" class="link-arrow">Code <span>→</span></a>
           </div>
         </div>
       </article>
-
+ 
       <article class="project-row">
         <div class="project-meta">
           <span class="project-num">04</span>
           <div class="project-tags">
-            <span class="tag">Prithvi 300M</span>
-            <span class="tag">Fine-tuning</span>
-            <span class="tag">TCS Research</span>
+            <span class="tag">WGAN-GP</span>
+            <span class="tag">EuroSAT</span>
+            <span class="tag">GAN</span>
+            <span class="tag tag-context">Self Project · Apr–May 2025</span>
           </div>
         </div>
         <div class="project-body">
-          <h3 class="project-title">Mowing detection from orbit — TCS Research internship</h3>
-          <p class="project-desc">Fine-tuned the Prithvi 300M foundation model on German grassland satellite data to detect mowing events from spectral time series. Reached 87% accuracy on the held-out test set. This project got me thinking seriously about what domain-specific pretraining actually buys you.</p>
+          <h3 class="project-title">Generating satellite imagery that doesn't exist</h3>
+          <p class="project-desc">Built a WGAN-GP to synthesise satellite images from the EuroSAT dataset across 10 land cover classes — useful for data augmentation when labeled imagery is scarce. The model learns spatial-textural features to generate 64×64 outputs. Validated generative quality on a downstream land cover classification task. Final metrics: FID 39.7, IS 4.3.</p>
           <div class="project-links">
-            <a href="#" class="link-arrow">View project <span>→</span></a>
+            <a href="#" class="link-arrow">Code <span>→</span></a>
           </div>
         </div>
       </article>
-
+ 
+      <article class="project-row">
+        <div class="project-meta">
+          <span class="project-num">05</span>
+          <div class="project-tags">
+            <span class="tag">SwinIR</span>
+            <span class="tag">Super-resolution</span>
+            <span class="tag tag-context">Course Project · GNR 638</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">SwinIR transformer for 4× image super-resolution</h3>
+          <p class="project-desc">Developed a SwinIR-based model with multi-head attention and residual connections to upscale images from 480×270 to 1920×1080 — a 4× factor. Optimised with patch-based training and L1 loss. Final performance: PSNR 24.8 dB, SSIM 0.76. Also built an HVAE for image reconstruction on the UC Merced Land Use dataset, improving representation learning through multi-level latent structure.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Code <span>→</span></a>
+          </div>
+        </div>
+      </article>
+ 
+      <article class="project-row">
+        <div class="project-meta">
+          <span class="project-num">06</span>
+          <div class="project-tags">
+            <span class="tag">GCN</span>
+            <span class="tag">Graph Learning</span>
+            <span class="tag tag-context">Course Project · IE 506</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Catching fake reviews with graph neural networks</h3>
+          <p class="project-desc">Implemented fake review detection on the Yelp dataset using both supervised and unsupervised graph learning. Compared generation-based vs contrastive approaches across GCN architectures. Contrastive learning with GCN came out on top — AUC 0.79. The interesting finding was how much the graph structure itself carries signal that text features miss entirely.</p>
+          <div class="project-links">
+            <a href="#" class="link-arrow">Code <span>→</span></a>
+          </div>
+        </div>
+      </article>
+ 
     </div>
   </section>
 
@@ -334,7 +371,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
-      <span class="footer-logo">Ksiti</span>
+      <span class="footer-logo">Kshiti</span>
       <p class="footer-copy">© 2025 Vaibhav Sonkar</p>
       <a href="#top" class="footer-top">Back to top ↑</a>
     </div>
