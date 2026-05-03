@@ -670,7 +670,8 @@ cite {
   margin-bottom: 20px;
 }
 
-.interests-inner > p {
+.interests-inner > p,
+.int-text p {
   font-size: 15px;
   color: var(--ink-4);
   line-height: 1.75;
